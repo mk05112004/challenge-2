@@ -7,7 +7,7 @@
 }
 
 img {
-   /* max-width: 100%;*/
+   /* max-width: 100%; */
 }
 
 ul {
@@ -19,8 +19,13 @@ body {
     font-family: "Barlow", sans-serif ;
     color: hsl(230, 29%, 20%);
     background-color: #fff;
+    position: relative;
+}
+
+main {
+    width: 100vw;
     padding: 1.5rem;
-    overflow-x: hidden;
+    overflow-x : hidden;
 }
 
 a {
@@ -56,11 +61,11 @@ cursor: pointer;
     z-index: -1;
 }
 .header {
-display: flex;
-align-items: center;
-justify-content: space-between;
-max-width: 1200px;
-margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
 }
 
 
@@ -106,17 +111,22 @@ nav.open {
     display: none;
 }
 
- .showcase {
+.showcase {
     display: flex;
     flex-direction: column-reverse;
     padding: 4rem 0;
- }
+}
 
- .showcase article:last-child img {
+/* .illustration-container {
+    100%+1.5rem);
+    overflow: hidden;
+} */
+
+.showcase article:last-child img {
     width: calc(125vw);
+}
 
- }
- .showcase h2 {
+.showcase h2 {
     font-weight: 400;
     font-size: 1.3rem;
     margin: 6rem 0 1rem;
@@ -125,54 +135,49 @@ nav.open {
     color: hsl(231, 7%, 65%);
 }
 
- .showcase h2 span {
-background-color: hsl(230, 29%, 20%);
-color: #fff;
-padding: 0.2rem 0.8rem ;
-border-radius: 30px;
-letter-spacing: 0;
- }
+.showcase h2 span {
+    background-color: hsl(230, 29%, 20%);
+    color: #fff;
+    padding: 0.2rem 0.8rem ;
+    border-radius: 30px;
+    letter-spacing: 0;
+}
 
- .showcase h1 {
-    font-size: 3rem;
+.showcase h1 {
+    font-size: 2.5rem;
     line-height: 1;
     text-transform: uppercase;
     margin-bottom: 1rem;
- }
+}
 
- .showcase p {
+.showcase p {
     margin-bottom: 2rem;
- }
+}
 
- .showcase .cta button {
+.showcase .cta button {
     background-color: hsl(0, 100%, 68%);
     font-weight: bold;
-    padding: 0.625rem 2rem;
-    font-size: 1rem;
-    font-family: "Barlow  Condenced", sans-serif;
-    color: #fff;
-    letter-spacing: 0.1rem;
-    text-transform: uppercase;
- }
-
- .showcase .cta span {
-    text-transform: uppercase;
+    padding: 0.8rem 1.3rem;
     font-size: 0.8rem;
-    color: hsl(231, 7%, 65%);
-    letter-spacing: 0.3rem;
-    margin-left: 1rem;
-    
- }
- 
-.attribution {
-    font-size: 14px;
-    text-align: center;
+    font-weight: 700;
+    font-family: "Barlow Condenced", sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 7px;
 }
 
-.attribution a {
-    color: hsl(228,45%,44%);
+.showcase .cta span {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: hsl(231, 7%, 65%);
+    letter-spacing: 0.1rem;
+    margin-left: 1rem;
 }
+
 @media (min-width: 768px) {
+    body {
+        overflow-x : hidden;
+    }
     nav {
         position: relative;
         top: 0;
