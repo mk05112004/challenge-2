@@ -4,15 +4,22 @@ const navbar = document.querySelector("nav")
 const closeMenu = document.querySelector(".close")
 const openMenu = document.querySelector(".menu")
 
-    menuButton.addEventListener("click", () => {
- if (navbar.classList.contains(open)){
-    navbar.classList.remove("open")
-    closeMenu.Style.display = "none"
-    openMenu.Style.display = "block"
- }
- else {
-    navbar.classList.add("open")
-    closeMenu.Style.display = "block"
-    openMenu.Style.display = "none"
- }
+menuButton.addEventListener("click", () => {
+   if (navbar.classList.contains('open')){
+      navbar.classList.remove("open")
+      console.log(closeMenu, openMenu)
+      // closeMenu.Style.display = "none"
+      // openMenu.Style.display = "block"
+      closeMenu.style.display = "none"
+      openMenu.style.display = "block"
+   }
+   else {
+      navbar.classList.add("open")
+      console.log(closeMenu, openMenu)
+      // closeMenu.Style.display = "block"
+      // openMenu.Style.display = "none"
+      closeMenu.style.display = "block"
+      openMenu.style.display = "none"
+   }
+   
 })
